@@ -17,8 +17,9 @@ module.exports = function (grunt) {
         var fileName = src.substring(0, src.length - path.parse(src).ext.length);
         var dir = fileName.split(path.sep);
         dir.pop();
+        var pathString = dir.join(path.sep);
 
-        var content = filePair.prefix.replace('{{path}}', dir.join(path.sep)) + 'tempart.factory(' + JSON.stringify(template) + ');';
+        var content = filePair.prefix.replace('{{path}}', pathString) + 'tempart.factory(\'' + pathString + '\',' + JSON.stringify(template) + ');';
         var dest = filePair.dest.split(path.sep).concat(fileName.split(path.sep)).join(path.sep).concat('.js');
 
         grunt.file.write(dest, content);
