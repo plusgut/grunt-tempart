@@ -1,0 +1,28 @@
+{
+  "name": "grunt-tempart",
+  "version": "0.3.0",
+  "description": "grunt task for parsing tempart files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plusgut/grunt-tempart.git"
+  },
+  "keywords": [
+    "grunt",
+    "template",
+    "tempart",
+    "parser"
+  ],
+  "dependencies": {
+    "tempart": "*"
+  },
+  "author": "Carlo Jeske",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plusgut/grunt-tempart/issues"
+  },
+  "homepage": "https://github.com/plusgut/grunt-tempart#readme"
+}
